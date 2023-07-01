@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 20px;
+  background: linear-gradient(90deg, rgb(202, 229, 255) 0%, rgb(255, 255, 255) 100%, rgb(247, 247, 247) 100%, rgb(201, 201, 201) 100%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* sadece input ve button */
+.todo-form {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: center;
+
+}
+/* komple liste */
+.liste {
+  display: flex;
+  flex-direction: column;
+  height: 490px;  
+  overflow-y: scroll;
+  border: 2px solid rgb(183, 183, 255);
+  border-radius:4px;
+
+}
+
+/* her bir liste elemanı */
+.list{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(217, 217, 255);
+  border-radius: 2px;
+
+}
+.list:hover{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgb(193, 196, 192);
+  border-radius: 5px;
+}
+/* liste item'ında ki text */
+.list-text {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  overflow-x: scroll;
+  overflow-x: hidden;
+} 
